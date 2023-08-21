@@ -167,7 +167,7 @@ int main(){
 ## Using function call and simulating a different algo based code
 
 .c file:- 
-'''
+<pre>
 #include<stdio.h>
 
 
@@ -179,7 +179,32 @@ int main(){
 	result=load(0x0,count+1);
 	printf("the sum is %d\n",result);
 }
-'''
+</pre>
+
+.s file:- 
+<pre>
+	.section .text
+.global load
+.type load, @function
+
+load:
+	add a4,a0,zero
+	add a2,a0,a1
+	add a3,a0,zero
+	
+loop:	add a4,a3,a4
+	addi a3,a3,1
+	blt a3,a2,loop
+	add a0,a4,zero
+	ret
+</pre>
+
+## Compilation and output
+![WhatsApp Image 2023-08-21 at 7 44 10 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/2f5183d8-1a46-4a60-926b-8366d6586a68)
+
+### Assembly-level code:-
+![WhatsApp Image 2023-08-21 at 7 38 53 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e8d2b5a4-2471-490b-ab2c-9801889eb104)
+
 
 
 
