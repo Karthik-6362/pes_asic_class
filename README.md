@@ -159,7 +159,12 @@ int main(){
 - syntax:- sd rs2,offset(rs1)
 - - sd:- stores the data from rs2 into (offset + rs1)
   - Instruction Format:- ![Screenshot 2023-08-21 190032](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b355c806-44df-460b-9040-3b0ac1898a56)
-    
+
+## Registers and their ABI names
+![php5Rx2Fk](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/60291646-4ba4-4e67-8bbe-7ae39a6cdca5)
+
+
+
 
 
 
