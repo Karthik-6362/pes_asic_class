@@ -163,6 +163,23 @@ int main(){
 ## Registers and their ABI names
 ![php5Rx2Fk](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/60291646-4ba4-4e67-8bbe-7ae39a6cdca5)
 
+#LAB
+## Using function call and simulating a different algo based code
+
+.c file:- 
+'''
+#include<stdio.h>
+
+
+extern int load( int x,int y);
+
+int main(){
+	int result=0;
+	int count=9;
+	result=load(0x0,count+1);
+	printf("the sum is %d\n",result);
+}
+'''
 
 
 
