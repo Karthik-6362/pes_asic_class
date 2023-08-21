@@ -66,4 +66,14 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 #### using Ofast optimization
 ![WhatsApp Image 2023-08-21 at 4 24 17 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/388bf05e-9d4f-4a86-b562-78ef8584cc90)
 
+##Spike simulation and debugging
+<pre>
+  spike -d pk sum.o //This command debugs the sum.o file 
+  until pc 0 10184   // This command runs debugging unitl the 10184th line
+  reg 0 sp         // This command will show us the data stored in the specifed register
+  // Upon pressing ENTER the next line will be executed
+</pre>
+![WhatsApp Image 2023-08-21 at 4 32 37 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/88d8f147-0e9e-4caa-933e-ea1c241a3532)
+### We can observe that the data has changed in the register after executing
+![WhatsApp Image 2023-08-21 at 4 33 11 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ab1139f8-bd98-4b95-a3e8-a27f2f94113f)
 
