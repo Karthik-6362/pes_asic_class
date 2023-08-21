@@ -84,5 +84,23 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 - - Unsigned:- range = 0 to (2^64 - 1)
 - - Signed:-   range = [positive => 0 to 2^63-1] and [negative => -1 to 2^63-1]
 - - for positive numbers msb is 0
-  - for negative numbers msb is 1 
+  - for negative numbers msb is 1
+
+#LAB
+
+## program to find out the highest and lowest values in unsigned long long int
+<pre>
+#include <stdio.h>
+#include <math.h>
+int main(){
+	unsigned long long int max = (unsigned long long int) (pow(2,64) -1);
+	unsigned long long int min = (unsigned long long int) (pow(2,64) *(-1));
+	printf("Minimum value is %llu\n",min);
+	printf("Maximum value is %llu\n",max);
+	return 0;
+}
+</pre>
+
+![WhatsApp Image 2023-08-21 at 5 43 05 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c7ccd2ba-3151-4637-8fff-e127f87e0b4e)
+
 
