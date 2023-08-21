@@ -82,5 +82,7 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 - size of double word:- 64bits
 - Binary number representation
 - - Unsigned:- range = 0 to (2^64 - 1)
-- - Signed:-   range = [positive => 0 to 2^63-1] and [negative => -1 to 2^63-1]  
+- - Signed:-   range = [positive => 0 to 2^63-1] and [negative => -1 to 2^63-1]
+- - for positive numbers msb is 0
+  - for negative numbers msb is 1 
 
