@@ -86,7 +86,7 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 - - for positive numbers msb is 0
   - for negative numbers msb is 1
 
-#LAB
+# LAB
 
 ## program to find out the highest and lowest values in unsigned long long int
 <pre>
@@ -102,5 +102,44 @@ int main(){
 </pre>
 
 ![WhatsApp Image 2023-08-21 at 5 43 05 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c7ccd2ba-3151-4637-8fff-e127f87e0b4e)
+
+##  program to find out the highest and lowest values in signed long long int
+<pre>
+	#include <stdio.h>
+#include <math.h>
+int main(){
+	long long int max = (long long int) (pow(2,63) -1);
+	long long int min = (long long int) (pow(2,63) *(-1));
+	printf("Minimum value is %lld\n",min);
+	printf("Maximum value is %lld\n",max);
+	return 0;
+}
+</pre>
+
+![WhatsApp Image 2023-08-21 at 5 50 33 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/541e2979-70f0-4f47-9bed-fe89a55b56ec)
+
+# DAY-2
+
+## Application binary interface (ABI)
+- The "Application Binary Interface" (ABI) in the context of RISC-V is a interface that defines how software interacts with a specific hardware platform, including aspects like function calling conventions, register usage, and data representation.
+- It ensures compatibility between compiled software and different implementations of the RISC-V architecture.
+
+## Memory allocation for double word
+- Double word has a size of 64 bits
+- We use little endian memory addressing system
+- We can directly load the data into registers (or)
+- The data can be split into bits and can be stored in 8 consecutive registers
+
+## Load Instruction
+
+![Screenshot 2023-08-21 182450](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/13121084-9e45-439e-abc6-856aa261fb14)
+- syntax:- ld rd,offset(rs)
+- - ld:- it is the instruction used to load a double word.
+  - the data in the address of (rs + offset) will be loaded into rd
+  - Instruction Format:- ![Screenshot 2023-08-21 184551](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/6f54f26b-7e84-4a55-8de2-a96d3504d317)
+  - - Opcode  :-  Gives what type of instruction
+    - funct3  :-  3-bit data which give the operation to be performed
+    - rd      :-  Destination register
+    - rs      :-  Source register
 
 
