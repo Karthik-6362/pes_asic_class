@@ -32,3 +32,8 @@ From the above link we need to run the commands in "run.sh".
 </pre>
 ![WhatsApp Image 2023-08-21 at 3 48 28 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c6dfb0af-1a20-4598-945c-1c288c42b741)
 
+#### To compile the same code using riscv compiler and get output
+<pre>
+  riscv64-unknown-elf-gcc -o1 -mabi=rv64i -march=rv64i -o sum.o sum.c     // compiles the code
+  
+</pre>
