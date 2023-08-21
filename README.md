@@ -130,7 +130,7 @@ int main(){
 - We can directly load the data into registers (or)
 - The data can be split into bits and can be stored in 8 consecutive registers
 
-## Load Instruction
+## LOAD Instruction
 
 ![Screenshot 2023-08-21 182450](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/13121084-9e45-439e-abc6-856aa261fb14)
 - syntax:- ld rd,offset(rs)
@@ -141,5 +141,31 @@ int main(){
     - funct3  :-  3-bit data which give the operation to be performed
     - rd      :-  Destination register
     - rs      :-  Source register
+
+## ADD Instruction
+
+![Screenshot 2023-08-21 185014](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9327081c-577d-4774-8777-1954a3eb9d80)
+- syntax:- add rd,rs1,rs2
+- - ld:- Adds the data in rs1 and rs2 and stores in rd
+  - Instruction format:- ![Screenshot 2023-08-21 185044](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d15dbd15-21c2-4b2d-af22-e80fa18804fe)
+  - -  Opcode    :-  Gives what type of instruction
+    - funct3     :-  3-bit data which give the operation to be performed
+    - rd         :-  Destination register
+    - rs1 & rs2  :-  Two source registers are used as there are two operands
+      
+
+## STORE instruction
+![Screenshot 2023-08-21 183414](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/6f683396-8b3e-4acf-8fec-fb20dd0e3158)
+- syntax:- sd rs2,offset(rs1)
+- - sd:- stores the data from rs2 into (offset + rs1)
+  - Instruction Format:- ![Screenshot 2023-08-21 190032](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b355c806-44df-460b-9040-3b0ac1898a56)
+    
+
+
+
+
+
+
+
 
 
