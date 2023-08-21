@@ -7,7 +7,7 @@ From the above link we need to run the commands in "run.sh".
 ## DAY1
 ### Instruction Set Architecture (ISA) is a set of rules and specifications that define the software-visible aspects of a computer's central processing unit (CPU). It provides a standardized interface between the hardware and the software, allowing software developers to write programs that can run on different hardware platforms without needing to know the intricate details of the underlying hardware.
 <pre>
-  '''c
+  '''
   #include <stdio.h>
 int main(){
   int i,sum=0,n=10;
