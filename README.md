@@ -53,3 +53,17 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 </pre>
 ![WhatsApp Image 2023-08-21 at 4 02 59 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/36d4f0f1-f1ba-46a6-8d7e-d568712bb082)
 
+#### Now let's open the assembly-level code of the the previously compiled code
+<pre>
+  riscv64-unknown-elf-objdump -d sum.o 
+  riscv64-unknown-elf-objdump -d sum.o | less 
+  //The difference between the two commands is that the second command is using a Unix utility 
+  called less to display the output in a paginated manner, allowing you to scroll through the 
+  disassembled code one screen at a time.
+</pre>
+#### using -o optimization
+![WhatsApp Image 2023-08-21 at 4 23 45 PM (1)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/01ed2dc6-86bc-4cc3-b40b-b8f60c5c3a08)
+#### using Ofast optimization
+![WhatsApp Image 2023-08-21 at 4 24 17 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/388bf05e-9d4f-4a86-b562-78ef8584cc90)
+
+
