@@ -12,16 +12,17 @@ From the above link we need to run the commands in "run.sh".
 
 '''
   
-  #include <stdio.h>
-  int main()
-  {
-  int i,sum=0,n=5;
-  for(i=1;i<=n;i++)
-    {
-    sum=sum+i;
-    }
-  printf("Sum of numbers from 1 to %d is %d",n,sum);
-  }
+#include <stdio.h>
+int main()
+{
+int i,sum=0,n=5;
+for(i=1;i<=n;i++)
+{
+sum=sum+i;
+}
+printf("Sum of numbers from 1 to %d is %d",n,sum);
+}
+
 '''
 
 #### To display the code on the terminal,compile it using GCC and get the output use the following commands
