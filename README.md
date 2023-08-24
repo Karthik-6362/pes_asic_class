@@ -26,54 +26,54 @@ printf("Sum of numbers from 1 to %d is %d",n,sum);
 ```
 
 #### To display the code on the terminal,compile it using GCC and get the output use the following commands
-<pre>
+```
   cat sum.c     // will display code on terminal
   gcc sum.c     // will compile the code
   ./a.out       // wil display the output
-</pre>
+```
 ![WhatsApp Image 2023-08-21 at 3 48 28 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c6dfb0af-1a20-4598-945c-1c288c42b741)
 
 #### To compile the same code using riscv compiler and get output
-<pre>
+```
   riscv64-unknown-elf-gcc -o1 -mabi=rv64i -march=rv64i -o sum.o sum.c     // compiles the code
-  
-</pre>
+
+```
 ##### An error occured 
 ![WhatsApp Image 2023-08-21 at 3 58 17 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f2ec496a-aa40-47a0-b85d-1f3c7db7ce39)
 ##### solution changing the paths 
-<pre>
+```
   vim ~/.bashrc
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/bin:$PATH
-</pre>
+```
 ##### After re-running all the above commands we get the output
-<pre>
+```
   vim ~/.bashrc
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/bin:$PATH
-</pre>
+```
 ![WhatsApp Image 2023-08-21 at 4 02 59 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/36d4f0f1-f1ba-46a6-8d7e-d568712bb082)
 
 #### Now let's open the assembly-level code of the the previously compiled code
-<pre>
+```
   riscv64-unknown-elf-objdump -d sum.o 
   riscv64-unknown-elf-objdump -d sum.o | less 
   //The difference between the two commands is that the second command is using a Unix utility 
   called less to display the output in a paginated manner, allowing you to scroll through the 
   disassembled code one screen at a time.
-</pre>
+```
 #### using -o optimization
 ![WhatsApp Image 2023-08-21 at 4 23 45 PM (1)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/01ed2dc6-86bc-4cc3-b40b-b8f60c5c3a08)
 #### using Ofast optimization
 ![WhatsApp Image 2023-08-21 at 4 24 17 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/388bf05e-9d4f-4a86-b562-78ef8584cc90)
 
 ##Spike simulation and debugging
-<pre>
+```
   spike -d pk sum.o //This command debugs the sum.o file 
   until pc 0 10184   // This command runs debugging unitl the 10184th line
   reg 0 sp         // This command will show us the data stored in the specifed register
   // Upon pressing ENTER the next line will be executed
-</pre>
+```
 ![WhatsApp Image 2023-08-21 at 4 32 37 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/88d8f147-0e9e-4caa-933e-ea1c241a3532)
 ### We can observe that the data has changed in the register after executing
 ![WhatsApp Image 2023-08-21 at 4 33 11 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ab1139f8-bd98-4b95-a3e8-a27f2f94113f)
@@ -90,7 +90,7 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 # LAB
 
 ## program to find out the highest and lowest values in unsigned long long int
-<pre>
+```
 #include <stdio.h>
 #include <math.h>
 int main(){
@@ -100,12 +100,12 @@ int main(){
 	printf("Maximum value is %llu\n",max);
 	return 0;
 }
-</pre>
+```
 
 ![WhatsApp Image 2023-08-21 at 5 43 05 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c7ccd2ba-3151-4637-8fff-e127f87e0b4e)
 
 ##  program to find out the highest and lowest values in signed long long int
-<pre>
+```
 #include <stdio.h>
 #include <math.h>
 int main(){
@@ -115,7 +115,7 @@ int main(){
 	printf("Maximum value is %lld\n",max);
 	return 0;
 }
-</pre>
+```
 
 ![WhatsApp Image 2023-08-21 at 5 50 33 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/541e2979-70f0-4f47-9bed-fe89a55b56ec)
 
@@ -168,7 +168,7 @@ int main(){
 ## Using function call and simulating a different algo based code
 
 .c file:- 
-<pre>
+```
 #include<stdio.h>
 
 
@@ -180,10 +180,10 @@ int main(){
 	result=load(0x0,count+1);
 	printf("the sum is %d\n",result);
 }
-</pre>
+```
 
 .s file:- 
-<pre>
+```
 	.section .text
 .global load
 .type load, @function
@@ -198,7 +198,7 @@ loop:	add a4,a3,a4
 	blt a3,a2,loop
 	add a0,a4,zero
 	ret
-</pre>
+```
 
 ## Compilation and output
 ![WhatsApp Image 2023-08-21 at 7 44 10 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/2f5183d8-1a46-4a60-926b-8366d6586a68)
