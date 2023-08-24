@@ -10,7 +10,7 @@ From the above link we need to run the commands in "run.sh".
 ### Writing a simple c code and compiling it using gcc compiler
 #### Program to calculate the sum of numbers from 1 to n(taken as 5 below)
 
-'''
+```
   
 #include <stdio.h>
 int main()
@@ -23,7 +23,7 @@ sum=sum+i;
 printf("Sum of numbers from 1 to %d is %d",n,sum);
 }
 
-'''
+```
 
 #### To display the code on the terminal,compile it using GCC and get the output use the following commands
 <pre>
