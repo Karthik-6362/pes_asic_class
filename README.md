@@ -1,4 +1,4 @@
-![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1ed807f7-c3a3-4010-b675-af65086c68db)# pes_asic_class
+# pes_asic_class
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#installation)
