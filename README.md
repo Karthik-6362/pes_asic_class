@@ -356,6 +356,18 @@ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
 
 </details>
 
+<details>
+	<summary> Using iverilog to load mux.v program and tretbench from the source files and execute the VCD file</summary>
+	
+### Commands used:- 
+```
+// get intp the folder containing the verilog code and the testbench files
+iverilog good_mux.v tb_good_mux.v
+./a.out // This will generate the VSD file
+gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench 
+```
+</details>
+
 
 
 
