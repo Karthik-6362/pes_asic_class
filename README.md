@@ -140,16 +140,29 @@ int main(){
 
 # DAY-2
 
+<details>
+	<summary> ABI </summary>
+	
 ## Application binary interface (ABI)
 - The "Application Binary Interface" (ABI) in the context of RISC-V is a interface that defines how software interacts with a specific hardware platform, including aspects like function calling conventions, register usage, and data representation.
 - It ensures compatibility between compiled software and different implementations of the RISC-V architecture.
+  
+</details>
 
+<details>
+	<summary>Memory allocation of double word</summary>
+	
 ## Memory allocation for double word
 - Double word has a size of 64 bits
 - We use little endian memory addressing system
 - We can directly load the data into registers (or)
 - The data can be split into bits and can be stored in 8 consecutive registers
 
+</details>
+
+<details>
+	<summary> LOAD instruction</summary>
+	
 ## LOAD Instruction
 
 ![Screenshot 2023-08-21 182450](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/13121084-9e45-439e-abc6-856aa261fb14)
@@ -162,6 +175,11 @@ int main(){
     - rd      :-  Destination register
     - rs      :-  Source register
 
+</details>
+
+<details>
+	<summary>ADD instruction </summary>\
+	
 ## ADD Instruction
 
 ![Screenshot 2023-08-21 185014](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9327081c-577d-4774-8777-1954a3eb9d80)
@@ -173,12 +191,18 @@ int main(){
     - rd         :-  Destination register
     - rs1 & rs2  :-  Two source registers are used as there are two operands
       
+</details>
+
+<details>
+	<summary> STORE instruction </summary>
 
 ## STORE instruction
 ![Screenshot 2023-08-21 183414](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/6f683396-8b3e-4acf-8fec-fb20dd0e3158)
 - syntax:- sd rs2,offset(rs1)
 - - sd:- stores the data from rs2 into (offset + rs1)
   - Instruction Format:- ![Screenshot 2023-08-21 190032](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b355c806-44df-460b-9040-3b0ac1898a56)
+ 
+</details>
 
 ## Registers and their ABI names
 ![php5Rx2Fk](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/60291646-4ba4-4e67-8bbe-7ae39a6cdca5)
