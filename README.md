@@ -3,8 +3,9 @@
 # Quick Links:-
 - [Installation of RV64 toolcahin](#installation)
 - [DAY-1 :- Executin simple codes in c using gcc compiler,spike and debugging it](#DAY1)
-- [DAY-2 :- ABI,Memory allocation,ADD,LOAD,STORE instructions),Function call and PICORV-32](#DAY-2)
+- [DAY-2 :- ABI,Memory allocation,ADD,LOAD,STORE instructions),Function call and PICORV-32](#DAY2)
 - [RTL design using Verilog with sky130 technology](#RTL_design_using_Verilog_with_sky130_technology)
+- - [DAY-1](#DAY-1)
 
 ## installation
 ### https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
@@ -140,7 +141,7 @@ int main(){
 
 </details>
 
-# DAY-2
+# DAY2
 
 <details>
 	<summary> ABI </summary>
