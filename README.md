@@ -1,4 +1,4 @@
-# pes_asic_class
+# PES_ASIC_CLASS
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#installation)
