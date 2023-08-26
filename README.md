@@ -332,8 +332,13 @@ chmod 777 opensource_eda_tool_install.sh
  
  <details>
  <summary>Intro to Verilog RTL design and synthesis  </summary>
+	 
+ ### Simulator  :- Tool(IVerilog) used to check/verify a design whenever the inputs change
+ ### Design     :- Set of verilog codes that have intended functionality
+ ### Testbench  :- Setup of applying stimulus to the design and verify the accuracy of the design
+![testbench](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3f438a46-8756-4143-b648-19ab7bf0a589)
+
  
-# TEST
 
 </details>
 
