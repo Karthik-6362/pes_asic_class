@@ -275,7 +275,7 @@ loop:	add a4,a3,a4
 
  # RTL_design_using_Verilog_with_sky130_technology
  
- ## Softwares installation
+ ## Softwares_installation
  <details>
 	 <summary>IVerilog</summary>
 	 
