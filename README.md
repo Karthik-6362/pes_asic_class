@@ -270,6 +270,11 @@ loop:	add a4,a3,a4
  </details>
 
  # RTL design using Verilog with sky130 technology
+ 
+ ## Pre-requisites / Softwares installation
+ <details>
+	 <summary>IVerilog</summary>
+ </details>
 
 ## DAY-1
  
