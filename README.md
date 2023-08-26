@@ -1,4 +1,7 @@
 # pes_asic_class
+
+# Quick Links:-
+- [Installation of RV64 toolcahin](#installation)
 ## installation
 ### https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
 From the above link we need to run the commands in "run.sh".
@@ -212,6 +215,8 @@ loop:	add a4,a3,a4
 ![Pcorv32](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/4a5be9a5-8372-40cb-8fd9-431169fd83f4)
 
 ![picorv32 file](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/80125716-87fc-42d1-8c79-d6f4e2368352)
+
+# Verilog R
 
 
 
