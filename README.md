@@ -364,8 +364,14 @@ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
 // get intp the folder containing the verilog code and the testbench files
 iverilog good_mux.v tb_good_mux.v
 ./a.out // This will generate the VSD file
-gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench 
+gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 ```
+### Executing the a.out and .vcd files:-
+![Executing the a out and vcd file on gtkwave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7dcc88ec-edf7-43c6-b9e3-41becee2523c)
+
+### gtkwave output :-
+![Output of gtkwave for good_mux](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/111c7454-ed1b-4f03-9123-cb333e678102)
+
 </details>
 
 
