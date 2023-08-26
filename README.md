@@ -14,12 +14,15 @@ From the above link we need to run the commands in "run.sh".
 	<summary> ISA </summary>
 	
 #### Instruction Set Architecture (ISA) is a set of rules and specifications that define the software-visible aspects of a computer's central processing unit (CPU). It provides a standardized interface between the hardware and the software, allowing software developers to write programs that can run on different hardware platforms without needing to know the intricate details of the underlying hardware.
-# LAB
+
+</details>
+
+<details>
+	<summary> Using GCC compiler </summary>
 ### Writing a simple c code and compiling it using gcc compiler
 #### Program to calculate the sum of numbers from 1 to n(taken as 5 below)
-</details>
+
 ```
-  
 #include <stdio.h>
 int main()
 {
@@ -74,6 +77,8 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 ![WhatsApp Image 2023-08-21 at 4 23 45 PM (1)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/01ed2dc6-86bc-4cc3-b40b-b8f60c5c3a08)
 #### using Ofast optimization
 ![WhatsApp Image 2023-08-21 at 4 24 17 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/388bf05e-9d4f-4a86-b562-78ef8584cc90)
+
+</details>
 
 ##Spike simulation and debugging
 ```
