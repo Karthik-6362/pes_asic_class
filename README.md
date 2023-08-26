@@ -4,7 +4,8 @@
 - [Installation of RV64 toolcahin](#installation)
 - [DAY-1 :- Executin simple codes in c using gcc compiler,spike and debugging it](#DAY1)
 - [DAY-2 :- ABI,Memory allocation,ADD,LOAD,STORE instructions),Function call and PICORV-32](#DAY-2)
-- [RTL design using Verilog with sky130 technology](#RTL design using Verilog with sky130 technology)
+- [RTL design using Verilog with sky130 technology](#RTL_design_using_Verilog_with_sky130_technology)
+
 ## installation
 ### https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
 From the above link we need to run the commands in "run.sh".
