@@ -19,6 +19,7 @@ From the above link we need to run the commands in "run.sh".
 
 <details>
 	<summary> Using GCC compiler </summary>
+	
 ### Writing a simple c code and compiling it using gcc compiler
 #### Program to calculate the sum of numbers from 1 to n(taken as 5 below)
 
@@ -80,7 +81,10 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 
 </details>
 
-##Spike simulation and debugging
+<details>
+<summary> Using SPIKE for compiling and debugging </summary>
+
+## pike simulation and debugging
 ```
   spike -d pk sum.o //This command debugs the sum.o file 
   until pc 0 10184   // This command runs debugging unitl the 10184th line
@@ -131,6 +135,8 @@ int main(){
 ```
 
 ![WhatsApp Image 2023-08-21 at 5 50 33 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/541e2979-70f0-4f47-9bed-fe89a55b56ec)
+
+</details>
 
 # DAY-2
 
