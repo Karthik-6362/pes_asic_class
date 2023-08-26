@@ -378,6 +378,19 @@ gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 
 </details>
 
+<details>
+	<summary>Analysing the logic and testbench</summary>
+
+ ### good_mux.v:- 
+ ![good_mux v](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/920f7672-2ea6-4d9f-a4dc-20b3bc964bf5)
+
+ ### tb_good_mux.v:- 
+ - $dumpfile("tb_good_mux.vcd"); // This instructs the simulator to generate a .vcd file which can be used on GTKWave to view the out[ut waveforms.
+ ![tb_good_mux v](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/fd539d05-c0a4-492c-9b19-ee0e949be5ec)
+
+
+</details>
+
 
 
 
