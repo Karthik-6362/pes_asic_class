@@ -207,11 +207,11 @@ loop:	add a4,a3,a4
 ![WhatsApp Image 2023-08-21 at 7 38 53 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e8d2b5a4-2471-490b-ab2c-9801889eb104)
 
 
+#PICORV32 :- It is an open-source RISC-V compatible CPU core that is designed to be small, simple, and efficient and implement RISC's instrucion sets.
 
+![Pcorv32](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/4a5be9a5-8372-40cb-8fd9-431169fd83f4)
 
-
-
-
+![picorv32 file](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/80125716-87fc-42d1-8c79-d6f4e2368352)
 
 
 
