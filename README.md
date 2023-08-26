@@ -1,4 +1,4 @@
-# pes_asic_class
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1ed807f7-c3a3-4010-b675-af65086c68db)# pes_asic_class
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#installation)
@@ -279,12 +279,51 @@ loop:	add a4,a3,a4
   ```
 sudo apt install iverilog
 ```
-  #### 
-	 
- </details>
+  ### Version of IVerilog installed
+  ![IVerilog version](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9a03cef5-4adf-4d15-8ea9-b616ace91f5b)
+
+</details>
 
  <details>
 	 <summary>GTKWave</summary>
+
+  ### commands to install GTKWave
+  ```
+sudo apt install gtkwave
+```
+### Version of GTKWave installed 
+![gtkwave installation](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/24ea3809-72e8-4af8-9df0-52fc947a1c25)
+
+ </details>
+ 
+ <details>
+	 <summary>YOSYS </summary>
+
+  ### Commands used to install YOSYS'
+  ```
+git clone https://github.com/YosysHQ/yosys.git
+cd yosys
+sudo apt install make
+sudo apt-get update
+sudo apt-get install build-essential clang bison flex  libreadline-dev gawk tcl-dev libffi-dev git  graphviz xdot pkg-config python3 libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev
+make config-gcc
+make
+```
+### Version of YOSYS installed
+![yosys installation](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3aca747f-fa5a-470c-a320-cc985eb708a9)
+
+ </details>
+
+ <details>
+	 <summary>Files /Source codes for Labs</summary>
+	 
+### commands used to install these 
+```
+git clone https://github.com/kunalg123/vsdflow.git
+cd vsdflow
+chmod 777 opensource_eda_tool_install.sh
+./opensource_eda_tool_install.sh 
+```
  </details>
 
 ## DAY-1
