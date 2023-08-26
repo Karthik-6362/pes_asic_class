@@ -324,6 +324,8 @@ cd vsdflow
 chmod 777 opensource_eda_tool_install.sh
 ./opensource_eda_tool_install.sh 
 ```
+![Installation of required source codes](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/8ff1a821-0cc4-4afe-a0ce-b79872d585ec)
+
  </details>
 
 ## DAY-1
