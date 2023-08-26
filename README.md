@@ -5,7 +5,7 @@
 - [DAY-1 :- Executin simple codes in c using gcc compiler,spike and debugging it](#DAY1)
 - [DAY-2 :- ABI,Memory allocation,ADD,LOAD,STORE instructions),Function call and PICORV-32](#DAY2)
 - [RTL design using Verilog with sky130 technology](#RTL_design_using_Verilog_with_sky130_technology)
-- - [Softwares installation](#Pre-requisites / Softwares installation)
+- - [Softwares installation](#Softwares_installation)
 - - [DAY-1](#DAY-1)
 
 ## installation
@@ -275,7 +275,7 @@ loop:	add a4,a3,a4
 
  # RTL_design_using_Verilog_with_sky130_technology
  
- ## Pre-requisites / Softwares installation
+ ## Softwares installation
  <details>
 	 <summary>IVerilog</summary>
 	 
