@@ -204,10 +204,18 @@ int main(){
  
 </details>
 
+<details>
+<summary>ABI names of registers </summary>
+
 ## Registers and their ABI names
 ![php5Rx2Fk](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/60291646-4ba4-4e67-8bbe-7ae39a6cdca5)
 
-#LAB
+</details>
+
+<details>
+<summary> Lab on function call </summary>
+
+# LAB
 ## Using function call and simulating a different algo based code
 
 .c file:- 
@@ -249,6 +257,7 @@ loop:	add a4,a3,a4
 ### Assembly-level code:-
 ![WhatsApp Image 2023-08-21 at 7 38 53 PM](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e8d2b5a4-2471-490b-ab2c-9801889eb104)
 
+</details>
 
 #PICORV32 :- It is an open-source RISC-V compatible CPU core that is designed to be small, simple, and efficient and implement RISC's instrucion sets.
 
