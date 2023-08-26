@@ -337,14 +337,26 @@ chmod 777 opensource_eda_tool_install.sh
  ### Design     :- Set of verilog codes that have intended functionality.
  ### Testbench  :- Setup of applying stimulus to the design and verify the accuracy of the design.
 ![testbench](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3f438a46-8756-4143-b648-19ab7bf0a589)
-### IVerilog based simulation flow
+### IVerilog based simulation flow :- 
 ![iverilog based system flow](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3174e610-0ffa-4d71-86b4-f01f9b58677b)
 - Based on the changes in the inputs the output will be manipulated depending on the design.
 - A vcd (Value Change Dump format) file will be generated.
 - To view this vcd file we use gtkwave tool which displays the outut.
 
+</details>
 
- </details>
+<details>
+	<summary>Source codes and testbenches</summary>
+	
+### Commands used 
+```
+git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
+```
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/01ccefe5-524f-4373-b096-6d7358d8760a)
+
+</details>
+
+
 
 
 
