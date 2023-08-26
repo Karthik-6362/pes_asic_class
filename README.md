@@ -268,9 +268,17 @@ loop:	add a4,a3,a4
 
 ![picorv32 file](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/80125716-87fc-42d1-8c79-d6f4e2368352)
  </details>
- 
-# Verilog R
 
+ # RTL design using Verilog with sky130 technology
+
+## DAY-1
+ 
+ <details>
+ <summary>DAY-1 :- Intro to Verilog RTL design and synthesis  </summary>
+ 
+# TEST
+
+</details>
 
 
 
