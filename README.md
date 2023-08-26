@@ -262,7 +262,7 @@ loop:	add a4,a3,a4
 <details>
 <summary>PICORV-32 </summary>
 
-#PICORV32 :- It is an open-source RISC-V compatible CPU core that is designed to be small, simple, and efficient and implement RISC's instrucion sets.
+# PICORV32 :- It is an open-source RISC-V compatible CPU core that is designed to be small, simple, and efficient and implement RISC's instrucion sets.
 
 ![Pcorv32](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/4a5be9a5-8372-40cb-8fd9-431169fd83f4)
 
@@ -274,7 +274,7 @@ loop:	add a4,a3,a4
 ## DAY-1
  
  <details>
- <summary>DAY-1 :- Intro to Verilog RTL design and synthesis  </summary>
+ <summary>Intro to Verilog RTL design and synthesis  </summary>
  
 # TEST
 
