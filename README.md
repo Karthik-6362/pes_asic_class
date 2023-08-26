@@ -333,14 +333,18 @@ chmod 777 opensource_eda_tool_install.sh
  <details>
  <summary>Intro to Verilog RTL design and synthesis  </summary>
 	 
- ### Simulator  :- Tool(IVerilog) used to check/verify a design whenever the inputs change
- ### Design     :- Set of verilog codes that have intended functionality
- ### Testbench  :- Setup of applying stimulus to the design and verify the accuracy of the design
+ ### Simulator  :- Tool(IVerilog) used to check/verify a design whenever the inputs change.
+ ### Design     :- Set of verilog codes that have intended functionality.
+ ### Testbench  :- Setup of applying stimulus to the design and verify the accuracy of the design.
 ![testbench](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3f438a46-8756-4143-b648-19ab7bf0a589)
+### IVerilog based simulation flow
+![iverilog based system flow](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3174e610-0ffa-4d71-86b4-f01f9b58677b)
+- Based on the changes in the inputs the output will be manipulated depending on the design.
+- A vcd (Value Change Dump format) file will be generated.
+- To view this vcd file we use gtkwave tool which displays the outut.
 
- 
 
-</details>
+ </details>
 
 
 
