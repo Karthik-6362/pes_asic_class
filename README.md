@@ -391,6 +391,26 @@ gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 
 </details>
 
+<details>
+	<summary>YOSYS and Logic Synthesis</summary>
+ 
+### YOSYS setup:- 
+![YOSYS setup](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5edd408a-fb91-4252-9ebe-307d19856b6b)
+
+- The design file and the .lib files are applied to YOSYS to get a synthesised output(netlist)
+- read_verilog:- used to read the design
+- read_liberty:- used to read the library files
+- write_verilog:- used on netlist file to get netlist
+
+### Veifying the synthesis:-
+![Verify the synthesus](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/db9309df-4c2f-41f9-a314-3973345cd399)
+
+- the same .tb file can be used here along with the netlist file generated
+- RTL design:- Behavioural representation of the required design (in VHDL)
+- Synthesis:- Converting RTL into gate level/netlist
+- Synthesiszer:- (YOSYS) converts RTL into netlist
+
+</details>
 
 
 
