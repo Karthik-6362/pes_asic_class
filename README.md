@@ -396,3 +396,6 @@ gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 
 
 
+
+
+
