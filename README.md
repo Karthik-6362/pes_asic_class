@@ -412,8 +412,33 @@ gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 
 </details>
 
+<details>
+	<summary>.lib files:- </summary>
 
+ - It consists of all the standard library files(collection of logical modules and all gates of different delays)
+ - Why gates of different delays:-
+ - - To satisfy the timing delays of different combinational logics
+   - T_clk > T_cq_A + T_comb + T_setup_b (we need fast gates here)
+   - T_hold < Tcq_A + T_comb (need slow gates)
 
+</details>
+
+<details>
+	<summary>Lab on YOSYS </summary>
+
+ ### We read the .lib and design diles on yosys to get the netlist output
+### Commands used:- 
+- read_liberty -lib /path to .lib file/   // It reads all the components in the .lib file
+- read_verilog good_mux.v             // This will read the desgn verilog file
+- - ![Execution of read liberty and  read verilog](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5eba649d-2a0a-459b-927d-0aa53e0b1818)
+- synth -top module_name    // This will synthesis the module specified
+- - ![Output of synth -top](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/05462979-f72b-4625-8423-af16fc5f7ee8)
+- abc -liberty /path to .lib file/   // This will generate the netlist file based on the .lib file mentioned
+- - ![Execution of abc -liberty ](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b0733448-6835-4cd0-bcda-4c232e764ee6)
+- show   // Used to see the synthesised output / netlist
+- - ![Synthesized output of good_mux](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/83091349-a6e2-4031-b015-45482d71bc0e)
+
+ </details>
 
 
 
