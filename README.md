@@ -428,6 +428,13 @@ gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 
  ### We read the .lib and design diles on yosys to get the netlist output
 ### Commands used:- 
+```
+read_liberty -lib /path to .lib file
+read_verilog good_mux.v
+synth -top module_name
+abc -liberty /path to .lib file/
+show
+```
 - read_liberty -lib /path to .lib file/   // It reads all the components in the .lib file
 - read_verilog good_mux.v             // This will read the desgn verilog file
 - - ![Execution of read liberty and  read verilog](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5eba649d-2a0a-459b-927d-0aa53e0b1818)
@@ -439,6 +446,7 @@ gtkwave tb_good_mux.vsd // This will open up the waveform based on the testbench
 - - ![Synthesized output of good_mux](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/83091349-a6e2-4031-b015-45482d71bc0e)
 
  </details>
+ 
 
 
 
