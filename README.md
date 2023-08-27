@@ -453,9 +453,56 @@ write_verilog -noattr good_mux_netlist.v
 </details>
 
 
+# DAY-2
+
+<details>
+	<summary>.lib files </summary>
+
+## commands used in terminal :- 
+```
+gvim /path to the .lib file/
+```
+## commands used in vim:-
+```
+syn off // Switches off the highlighting of the syntax
+se un  // used to enable the line numbers
+/cell  // used to find a word cell
+vsp   //
+```
+it contains:- 
+- Conditions of PVT(Pressure Voltage Temperature) for proper working
+- Default values/units
+- - time_unit : "1ns";
+  - voltage_unit : "1V";
+  - leakage_power_unit : "1nW";
+  - current_unit : "1mA";
+  - pulling_resistance_unit : "1kohm";
+  - capacitive_load_unit(1.0000000000, "pf");
+  - default_operating_conditions : "tt_025C_1v80";
+- Standard cells
+- Leakage powers of all the cells for different inputs
+- About the technology("CMOS")
+- 
+
+## .lib file:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d1c0aadb-6cef-4fab-a7a9-738635e677ea)
+
+## Different versions of the and2 gate:- 
+
+### and2_0:-
+![and2_0](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f51956e2-5536-49c5-bead-3d4a07af4b8f)
+
+### and2_2:- 
+![and2_2](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/03ab1e2b-1467-45dc-8abb-bf9a07600df5)
+
+### and2_4:-
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e4d5275d-7e0a-4591-a89c-a35658d59a48)
+
+### Observation:- 
+- In terms of area and power :- and2_4 > and2_2 >and2_0
+- Wider cells occupy high area and consume high power and the delay is low
+- smaller cells occupy low area and consume low power and the delay is high   
+
+</details>
+
  
-
-
-
-
-
