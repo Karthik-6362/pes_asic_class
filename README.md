@@ -434,6 +434,8 @@ read_verilog good_mux.v
 synth -top module_name
 abc -liberty /path to .lib file/
 show
+write_verilog -noattr good_mux_netlist.v
+!gvim good_mux_netlist.v
 ```
 - read_liberty -lib /path to .lib file/   // It reads all the components in the .lib file
 - read_verilog good_mux.v             // This will read the desgn verilog file
@@ -444,8 +446,13 @@ show
 - - ![Execution of abc -liberty ](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b0733448-6835-4cd0-bcda-4c232e764ee6)
 - show   // Used to see the synthesised output / netlist
 - - ![Synthesized output of good_mux](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/83091349-a6e2-4031-b015-45482d71bc0e)
+- write_verilog -noattr good_mux_netlist.v // This command writes the netlist into the specifies file
+- !gvim good_mux_netlist.v  // This command will display the netlist.v file
+- - ![Netlist representation of the mux](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/8e666e9f-79f1-41e1-870b-c5cfc23675fd)
+  
+</details>
 
- </details>
+
  
 
 
