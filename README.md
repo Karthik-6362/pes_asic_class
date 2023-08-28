@@ -509,10 +509,20 @@ it contains:-
 <details>
 	<summary>Hierarchical vs Flat Synthesis </summary>
 
- ## Synthesizing a module named multiple_modules.v 
+ ## Synthesizing a module named multiple_modules.v using /YOSYS
  - It contains two sub-modules
  - ![Multiple_modules v](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ffa7add0-f537-4075-b6be-a2ad4564c822)
 
+## command used:- 
+```
+read_liberty -lib /path to .lib file/    // reads the .lib file onto YOSYS
+read_verilog multiple_modules.v          // reads the .v file specified
+synth -top multiple-modules              // synthesizes the design by taking specified module as top module  
+abc -liberty /path to .lib file/         // links the .lib file to the design
+show                                     // displays the synthesized design
+write_verilog -noattr multiple_modules_hier.v    // writes the netlist into the specified file 
+!gvim multiple_modules_hier.v            // displays the netlist file
+```
  ## Opening YOSYS and reading the .lib file:- 
  ![Openig YOSYS and reading liberty files](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5a15e800-70c3-4c3b-a4bd-039531a33344)
 
@@ -537,7 +547,14 @@ it contains:-
 ![Netlist_1](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c0ba177d-7a18-4763-9d41-6b158e7e515c)
 ![Netlist_2](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5b30983e-0d01-4172-85cf-6fbcbcf861bf)
 
+## Expected v/s synthesized design:- 
+![Theory](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9293f26d-182d-4229-aafd-d016be6ae579)
 
+## Observations:- 
+- The synthesized and the expected design are different because the expected uses PMOS stacking which is not prefferable
+- Using de-morgans law we can verify the design.
+- The netlist file contains the hierarchy as mentioned in the design file.
+- In the netlist file one NAND gate and two inverters are used instaed of using a and gate & or gate as specified in the design
 
 
 </details>
