@@ -467,7 +467,7 @@ gvim /path to the .lib file/
 syn off // Switches off the highlighting of the syntax
 se un  // used to enable the line numbers
 /cell  // used to find a word cell
-vsp   //
+vsp   // Opens another window of the same file
 ```
 it contains:- 
 - Conditions of PVT(Pressure Voltage Temperature) for proper working
@@ -505,4 +505,42 @@ it contains:-
 
 </details>
 
- 
+
+<details>
+	<summary>Hierarchical vs Flat Synthesis </summary>
+
+ ## Synthesizing a module named multiple_modules.v 
+ - It contains two sub-modules
+ - ![Multiple_modules v](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ffa7add0-f537-4075-b6be-a2ad4564c822)
+
+ ## Opening YOSYS and reading the .lib file:- 
+ ![Openig YOSYS and reading liberty files](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5a15e800-70c3-4c3b-a4bd-039531a33344)
+
+## Reading the moltiple_modules.v file on YOSYS:-
+![reading the file onto yosys](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ffd41d13-4c03-4617-9c32-c7c225df6459)
+
+## Using synth command to synthesize the design:-
+![Synthesis1 of of the file](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/8e1161bb-86d6-4137-a782-7f6552f95ad5)
+
+![Synthesis2 of of the file](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7e3dcc6f-bfc2-486d-a397-4f69d9bd790d)
+
+## Linking the .lib file to the design:-
+![Linking  lib with design](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/59c0eea0-b330-474f-bb04-8c547b118898)
+  
+## Synthesized output:- 
+![Synthesizes output of the design](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/09d1dc75-9565-435d-ac31-741890270149)
+
+## Using write_verilog to write the netlist:- 
+![Using write_verilog to write the netlist](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/6ff263a1-cc1b-4174-a357-60581bf9b17a)
+
+## The output netlist:- 
+![Netlist_1](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c0ba177d-7a18-4763-9d41-6b158e7e515c)
+![Netlist_2](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5b30983e-0d01-4172-85cf-6fbcbcf861bf)
+
+
+
+
+</details>
+
+
+
