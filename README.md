@@ -7,6 +7,7 @@
 - [RTL design using Verilog with sky130 technology](#RTL_design_using_Verilog_with_sky130_technology)
 - - [Softwares installation](#Softwares_installation)
 - - [DAY-1](#DAY-1)
+  - [DAY-2](#DAY-2)
 
 
 
@@ -334,7 +335,7 @@ chmod 777 opensource_eda_tool_install.sh
 
  </details>
 
-## DAY-1
+# DAY-1
  
  <details>
  <summary>Intro to Verilog RTL design and synthesis  </summary>
