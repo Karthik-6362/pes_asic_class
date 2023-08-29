@@ -578,8 +578,8 @@ synth -top multiple-modules              // synthesizes the design by taking spe
 abc -liberty /path to .lib file/         // links the .lib file to the design
 flatten                                  // It flattens the hierarchy
 show                                     // displays the synthesized design
-write_verilog -noattr multiple_modules_hier.v    // writes the netlist into the specified file 
-!gvim multiple_modules_hier.v            // displays the netlist file```
+write_verilog -noattr multiple_modules_flat.v    // writes the netlist into the specified file 
+!gvim multiple_modules_flat.v            // displays the netlist file```
 ```
 
 ## Commands execution:- 
@@ -599,4 +599,28 @@ write_verilog -noattr multiple_modules_hier.v    // writes the netlist into the 
 
  </details>
 
+
+<details>
+	<summary>Sub-module level synthesis  </summary>
+
+- It is syhthesizing each submodule seperately and then stiching to form the entire design.
+- It is used when we have multiple instances if the same module in the design,so that the netlist can be reused.
+- When the size of the design is too high,then we divide the design into sub-modules and  the synthesize it.
+- Syntax:- synth -top /module-name/    // The module name specified will be synthesized.
+ 
+ ## Commands used:- 
+ ```
+read_liberty -lib /path to .lib file/    // reads the .lib file onto YOSYS
+read_verilog multiple_modules.v          // reads the .v file specified
+synth -top sub_module1              // synthesizes the design by taking specified module as top module  
+abc -liberty /path to .lib file/         // links the .lib file to the design
+show                                     // displays the synthesized design
+write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist into the specified file 
+!gvim multiple_modules_submodule1.v            // displays the netlist file
+
+```
+
+
+
+</details>
 
