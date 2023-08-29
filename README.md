@@ -560,4 +560,40 @@ write_verilog -noattr multiple_modules_hier.v    // writes the netlist into the 
 </details>
 
 
+<details>
+	<summary>Flat synthesis </summary>
+
+ ## Flat synthesis:- 
+ - Using the command " flatten " to flatten the hierarchy and directly initialize the required modules under the main module.
+ - Does not preserve hierarchy.
+ 
+```
+commands used:- 
+read_liberty -lib /path to .lib file/    // reads the .lib file onto YOSYS
+read_verilog multiple_modules.v          // reads the .v file specified
+synth -top multiple-modules              // synthesizes the design by taking specified module as top module  
+abc -liberty /path to .lib file/         // links the .lib file to the design
+flatten                                  // It flattens the hierarchy
+show                                     // displays the synthesized design
+write_verilog -noattr multiple_modules_hier.v    // writes the netlist into the specified file 
+!gvim multiple_modules_hier.v            // displays the netlist file```
+```
+
+## Commands execution:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f2599e97-d266-4f63-8a2a-835bb389368c)
+
+## Synthesized output:- 
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/73dcf440-d035-4312-ba0e-195d69c5098d)
+
+## Output netlist:- 
+![Netlist code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ff3f9863-59a8-417a-9e49-faab5ea5c447)
+
+## Observations:- 
+
+- If the flatten command is used then the hierarchy is not preserved.
+- There is no seperate modules for and & or sub-modules.
+- The netlist of the sub-modules are written into the main module. 
+
+ </details>
+
 
