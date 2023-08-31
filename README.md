@@ -640,7 +640,7 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 
 
 <details>
-	<summary>Why flops and folps coding style </summary>
+	<summary>Why flops and flops coding style </summary>
 
 ## WHY Flops:-
 - Beacuse the combinational logic in series can cause glitches.
