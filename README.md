@@ -603,7 +603,7 @@ write_verilog -noattr multiple_modules_flat.v    // writes the netlist into the 
 <details>
 	<summary>Sub-module level synthesis  </summary>
 
-- It is syhthesizing each submodule seperately and then stiching to form the entire design.
+- It is synthesizing each submodule seperately and then stiching to form the entire design.
 - It is used when we have multiple instances if the same module in the design,so that the netlist can be reused.
 - When the size of the design is too high,then we divide the design into sub-modules and  the synthesize it.
 - Syntax:- synth -top /module-name/    // The module name specified will be synthesized.
@@ -636,6 +636,26 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 ![sub-module2 synthesized op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/0c3e8906-df7d-4cc6-ac0a-3b494c4c2bc3)
 
 
+</details>
+
+
+<details>
+	<summary>Why flops and folps coding style </summary>
+
+## WHY Flops:-
+- Beacuse the combinational logic in series can cause glitches.
+- To store the intermediate values during execution.
+- Keep the glitching values of the combinational logic away from on another.Even though the input of the flop is glitching the output of the flop will be stable
+- Higher the number of comb logics, the glitches will be carrued forward so it produces outputs.
+- Sync flop:- It will have both reset and clk in the sensitivity list.
+- ASync flop:- It will have only clk in the sensitivity list. 
+- In the example below for the b=values of a,b,c as (0,0,1) and (1,1,0) we should get an output of 1, but in this case we get the som glitched output in between.
+
+![IMG_20230831_200528](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9eba71be-b785-4a1b-997a-9e68702a9ba5)
+
+
+
 
 </details>
+
 
