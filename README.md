@@ -620,6 +620,21 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 
 ```
 
+## Cmds execution:-
+![Cmds](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1ff1fb87-44a9-4b95-b13e-e5eb3e31c898)
+
+## Synthesis of sub_module1:-
+![and(sub-module1) synth](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/8f04faf3-68fe-4f26-82c3-e949efeb4e65)
+
+## Synthesized output:- 
+![sub-module1 synthesized op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e7328536-0181-4e20-aadb-47ac3164ae57)
+
+## synthesis of sub_module2:-
+![or(sub-module2) synth](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ce6f2d6c-4246-42b9-9813-12924e006903)
+
+## Synthesized output:- 
+![sub-module2 synthesized op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/0c3e8906-df7d-4cc6-ac0a-3b494c4c2bc3)
+
 
 
 </details>
