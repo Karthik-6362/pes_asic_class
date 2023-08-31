@@ -654,6 +654,21 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 ![IMG_20230831_200528](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9eba71be-b785-4a1b-997a-9e68702a9ba5)
 
 
+## Async reset:- 
+- Irrespective of the clk if the reset it turned to 1(posedge) the output will be set to 0.
+- After the reset it turned dowm to 0 the output copies the data.
+### Cmds used:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f33fb534-858d-4343-bd4e-86c031564e02)
+
+### Code:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ff35d66f-2fdb-4a3a-9895-e497d69ffee7)
+
+### GTKWave :- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7f0b3fba-fffa-428c-8fda-3e6c6bdd6258)
+
+
+## Async Set:- 
+
 
 
 </details>
