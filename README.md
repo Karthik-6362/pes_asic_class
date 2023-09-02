@@ -659,13 +659,32 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 - Irrespective of the clk if the reset it turned to 1(posedge) the output will be set to 0.
 - After the reset it turned dowm to 0 the output copies the data on every posedge of clk.
 ### Cmds used:- 
-![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f33fb534-858d-4343-bd4e-86c031564e02)
+```
+// For wave output:-
+gvim dff_asyncres.v                     // Displays the code.
+iverilog dff_asyncres.v tb_asyncres.v   // Compile sthe code.
+./a.out                                 // Generates the .vcd(value change dump file)
+gtkwave tb_dff_asyncres.vcd             // Produces the wave output.
+  
+```
+```
+// For the synthesis:-
+yosys
+read_liberty -lib /path to .lib file/
+read_verilog dff_asyncres.v
+synth -top asyncres
+dfflibmap -liberty /path to .lib file/
+```
+
 
 ### Code:- 
 ![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/ff35d66f-2fdb-4a3a-9895-e497d69ffee7)
 
 ### GTKWave output:- 
 ![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7f0b3fba-fffa-428c-8fda-3e6c6bdd6258)
+
+### Synthesized output:- 
+![Synthesized](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/fdba80ee-b402-4037-a131-2616cbdd9205)
 
 </details>
 
@@ -689,8 +708,9 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 
 <details>
 	<summary>Sync reset:- </summary>
-	- If the reset is 1, then the value of q will be updated to 0 on the posedge of the clk.
-	- If the reset is 0, then at every posedge of the clk the value of d will be copied to q.
+
+- If the reset is 1, then the value of q will be updated to 0 on the posedge of the clk.
+- If the reset is 0, then at every posedge of the clk the value of d will be copied to q.
 
 ### Cmds used:- 
 ![cmds](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e82b3500-ed86-45b0-872a-46d1067c78af)
