@@ -670,10 +670,10 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 </details>
 
 <details>
-<summary>Async set:-</summary>
+	<summary>Async set:-</summary>
 
- - Irrespective of the clk if the set it turned to 1(posedge) the output will be set to 1.
-- After the set it turned dowm to 0 the output copies the data on every posedge of clk.
+ - Irrespective of the clk if the set it turned to 1(posedge) the output will be 1.
+- After the set it turned down to 0 the output copies the data on every posedge of clk.
 
 ### Cmds used:-
 ![cmds](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d544f867-63bc-482b-99f2-2e9647a0fe66)
@@ -686,7 +686,24 @@ write_verilog -noattr multiple_modules_submodule1.v    // writes the netlist int
 
 </details>
 
- 
+
+<details>
+	<summary>Sync reset:- </summary>
+	- If the reset is 1, then the value of q will be updated to 0 on the posedge of the clk.
+	- If the reset is 0, then at every posedge of the clk the value of d will be copied to q.
+
+### Cmds used:- 
+![cmds](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e82b3500-ed86-45b0-872a-46d1067c78af)
+
+### Code:- 
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/0fe6661f-e80a-4898-a8d3-e560f4fcd2fd)
+
+### GTKWave output:- 
+![wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1e945e7d-2111-4d7b-9bcf-de30f0b577a5)
+
+</details>
+
+
 </details>
 
 
