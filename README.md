@@ -829,7 +829,39 @@ show                                     // Displays the synthes=ized output /ne
 # DAY-3
 
 <details>
-	<summary> </summary>
+	<summary>Combinational logic optimisations:-  </summary>
+
+- Constant Propogation:-
+- - Conseidering a input to the logic to be constant there by the output is optmised.
+  - Comsider that Y=((AB)+c)' is the circuit and A is assumed to be a constant 0.
+  - The output gets optmised to c'
+  - ![comb const pgn](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/65c237cb-c35e-403d-81da-ddff0c5fa022)
+
+- Boolean logic optimisation:-
+- - Having a boolean expression of the output and then optimising it.
+  - Using techniques like k-map and quine Mckluskey algorithms.
+  -  ![comb bool opt](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7f7f02e7-c7f8-4718-98c0-fbc77bdb1589)
+
+</details> 
+
+<details>
+	<summary>Sequential Logic optimisations:- </summary>
+
+- Basic:-
+- - Sequential constant propagation:-
+  - Making a input constant, such that irrespective of the clk and reset we get the output as 0.
+  - Not possible when we use set as the output will be 1 when set=1.
+  - ![seq cosnt pgn](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/fa3caba2-3cef-44e7-8504-ef497195bee0)
+  - ![seq const pgn1](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d1b57cd5-7dc3-4975-92c7-a71a82d0b29f)
+
+- Advance:-
+- - State Optimisations:- Optimising the unused states of a block/fsm to make the best design.
+  - Cloning:- Optimising the florr plan such that the block which is used to run further many blocks can be cloned so that the delay gets reduced between the blocks.
+  - Retiming:- Splitting the combinational logic between two flops amon themselves such that the clk signal is utilized to its capacity and the freq of operation is reduced. 
+  
+</details>
+
+
 </details>
 
 
