@@ -802,6 +802,7 @@ show                                     // Displays the synthes=ized output /ne
 
 <details>
 	<summary>Analyzing y=a*9</summary>
+
 - If a is a 3-bit input and y is a 6-bit output then the output is just appending a at the LSB of the binary value of a.
 - The expected optimisation is using a multiplier with one input as a and the other as 9.
 - From the previous case (a*8) o/p is known.
