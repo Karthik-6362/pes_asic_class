@@ -6,8 +6,8 @@
 - [DAY-2 :- ABI,Memory allocation,ADD,LOAD,STORE instructions),Function call and PICORV-32](#DAY2)
 - [RTL design using Verilog with sky130 technology](#RTL_design_using_Verilog_with_sky130_technology)
 - - [Softwares installation](#Softwares_installation)
-- - [DAY-1](#DAY-1)
-  - [DAY-2](#DAY-2)
+- - [DAY-1:- Introduction to Verilog RTL design and synthesis](#DAY-1)
+  - [DAY-2:- Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#DAY-2)
 
 
 
@@ -823,6 +823,19 @@ show                                     // Displays the synthes=ized output /ne
 
 </details>
 
-
 </details>
+
+
+# DAY-3
+
+<details>
+	
+</details>
+
+
+
+
+
+
+
 
