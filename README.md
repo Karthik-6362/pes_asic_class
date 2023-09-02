@@ -802,8 +802,23 @@ show                                     // Displays the synthes=ized output /ne
 
 <details>
 	<summary>Analyzing y=a*9</summary>
- 
-	
+- If a is a 3-bit input and y is a 6-bit output then the output is just appending a at the LSB of the binary value of a.
+- The expected optimisation is using a multiplier with one input as a and the other as 9.
+- From the previous case (a*8) o/p is known.
+- ![IMG_20230902_195837](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/60236a2c-7ef6-466b-ad0b-3fa2d6de24d4)
+
+### code:- 
+ ![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/8f10c3fa-f8b2-4d34-b5dd-eeccb6b35eeb)
+
+### No cells are mapped:- 
+![no cells used](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c7590443-2a13-4682-99ed-8c381b900a77)
+
+### Netlist generated:- 
+![netlist](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c429cc26-f262-42bb-9a70-5fb17ce4557a)
+
+### Synthesized output:-
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3bf24f01-915a-4875-815a-ec968fbef24e)
+
 </details>
 
 
