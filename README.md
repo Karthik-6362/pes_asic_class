@@ -829,7 +829,7 @@ show                                     // Displays the synthes=ized output /ne
 # DAY-3
 
 <details>
-	
+	<summary> </summary>
 </details>
 
 
