@@ -669,11 +669,13 @@ gtkwave tb_dff_asyncres.vcd             // Produces the wave output.
 ```
 ```
 // For the synthesis:-
-yosys
-read_liberty -lib /path to .lib file/
-read_verilog dff_asyncres.v
-synth -top asyncres
-dfflibmap -liberty /path to .lib file/
+yosys                                    // Opems yosys 
+read_liberty -lib /path to .lib file/    // Reads the liberty files onto yosys
+read_verilog dff_asyncres.v              // Reads the verilog file onto yosys
+synth -top asyncres                      // Synthesizes the module name mentioned considering it as top module
+dfflibmap -liberty /path to .lib file/   // Maps the flops library to the design
+abc -liberty /Path to .lib file/         // Generates the netlist
+show                                     // Displays the synthes=ized output /netlist
 ```
 
 
