@@ -696,14 +696,35 @@ show                                     // Displays the synthes=ized output /ne
  - Irrespective of the clk if the set it turned to 1(posedge) the output will be 1.
 - After the set it turned down to 0 the output copies the data on every posedge of clk.
 
-### Cmds used:-
-![cmds](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d544f867-63bc-482b-99f2-2e9647a0fe66)
- 
+### Cmds used:- 
+```
+// For wave output:-
+gvim dff_async_set.v                      // Displays the code.
+iverilog dff_async_set.v tb_async_set.v   // Compile sthe code.
+./a.out                                   // Generates the .vcd(value change dump file)
+gtkwave tb_dff_async_set.vcd               // Produces the wave output.
+  
+```
+```
+// For the synthesis:-
+yosys                                     // Opems yosys 
+read_liberty -lib /path to .lib file/     // Reads the liberty files onto yosys
+read_verilog dff_async_set.v              // Reads the verilog file onto yosys
+synth -top async_set                      // Synthesizes the module name mentioned considering it as top module
+dfflibmap -liberty /path to .lib file/    // Maps the flops library to the design
+abc -liberty /Path to .lib file/          // Generates the netlist
+show                                      // Displays the synthes=ized output /netlist
+```
+
 ### Code:- 
 ![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/2ab9d175-81cb-4f73-ac06-f7748051eb9f)
 
 ### GTKwave output:-
 ![wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/cc2e6e86-88f3-4887-8726-12252692afd1)
+
+### Synthesized output:-
+![Synthesized](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b2947553-7fe5-4df9-bce2-b32770b78202)
+
 
 </details>
 
@@ -715,13 +736,34 @@ show                                     // Displays the synthes=ized output /ne
 - If the reset is 0, then at every posedge of the clk the value of d will be copied to q.
 
 ### Cmds used:- 
-![cmds](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e82b3500-ed86-45b0-872a-46d1067c78af)
+```
+// For wave output:-
+gvim dff_syncres.v                     // Displays the code.
+iverilog dff_syncres.v tb_syncres.v   // Compile sthe code.
+./a.out                                 // Generates the .vcd(value change dump file)
+gtkwave tb_dff_syncres.vcd             // Produces the wave output.
+  
+```
+```
+// For the synthesis:-
+yosys                                    // Opems yosys 
+read_liberty -lib /path to .lib file/    // Reads the liberty files onto yosys
+read_verilog dff_syncres.v              // Reads the verilog file onto yosys
+synth -top syncres                      // Synthesizes the module name mentioned considering it as top module
+dfflibmap -liberty /path to .lib file/   // Maps the flops library to the design
+abc -liberty /Path to .lib file/         // Generates the netlist
+show                                     // Displays the synthes=ized output /netlist
+```
+
 
 ### Code:- 
 ![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/0fe6661f-e80a-4898-a8d3-e560f4fcd2fd)
 
 ### GTKWave output:- 
 ![wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1e945e7d-2111-4d7b-9bcf-de30f0b577a5)
+
+### Synthesized output:-
+![Synthesized](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/4cb91371-479a-49cb-a41c-e5ceb2622a53)
 
 </details>
 
