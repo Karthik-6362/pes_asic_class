@@ -767,7 +767,45 @@ show                                     // Displays the synthes=ized output /ne
 
 </details>
 
+</details>
+
+
+<details>
+	<summary>Interesting optimisations:-  </summary>
+
+<details>
+<summary>Analyzing y=a*2 </summary>
+	
+ - If a is a 3-bit input and y is a 4-bit output then the output is just appending 0 at the LSB of the binary value of a.
+ - The expected optimisation is using a multiplier with one input as a and the other as 2.
+ - Similarly for multiplying with 4(2^2) it is appending 2 zeros at LSB.
+ - If it we multiply by 8(2^3) then 3 zeros are appended.
+ - ![IMG_20230902_193724](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/cc3260ff-8359-45ef-9215-8dcb83651ad9)
+
+
+### code:-
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f68981a4-e4f0-4aaa-a925-02b9117f0b3b)
+
+### There are 0 cells mapped:- 
+![Cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/bdefcf86-1663-4799-8398-3bb25087d46c)
+
+### abc command returns "there is nothing to map" 
+![abc not reqd as there is nothing to map](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/893233dd-57e0-4cd8-804f-1862dacce9a3)
+
+### Netlist generated:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5d234de5-2999-4bf1-b0f5-cc87b881f445)
+
+### Synthesized output:- 
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3073e3e5-fbf0-4de4-8796-e6be02429e85)
 
 </details>
 
+<details>
+	<summary>Analyzing y=a*9</summary>
+ 
+	
+</details>
+
+
+</details>
 
