@@ -1148,7 +1148,17 @@ show                                     // Displays the synthes=ized output /ne
 <details>
 	<summary> Labs on synth-sim mismatch for blocking statement:- </summary>
 
- 
+#### Code:-
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/418d983b-2fbf-445c-af60-a0e99a2a7466)
+
+- The present valuie of C is anded with the previous values of A|B.
+- But our expextation is that is takes only present values
+- The Value of X taken in calculation of D is the previous values.
+
+#### Wave output of RTL simulation:- 
+![RTL simulation wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/fa2950dc-c455-4586-a85f-0517339c9207)
+
+#### 
 </details>
 
 
