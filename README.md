@@ -1,4 +1,4 @@
-# PES_ASIC_CLASS
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7be865dd-4d36-46b7-aa0d-70d81382bcda)# PES_ASIC_CLASS
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#Installation_of_RISC-v_toolchain)
@@ -829,7 +829,7 @@ show                                     // Displays the synthes=ized output /ne
 # DAY-3
 
 <details>
-	<summary>Combinational logic optimisations:-  </summary>
+	<summary>Combinational logic optimisations(Theory):-  </summary>
 
 - Constant Propogation:-
 - - Conseidering a input to the logic to be constant there by the output is optmised.
@@ -845,7 +845,7 @@ show                                     // Displays the synthes=ized output /ne
 </details> 
 
 <details>
-	<summary>Sequential Logic optimisations:- </summary>
+	<summary>Sequential Logic optimisations(Theory):- </summary>
 
 - Basic:-
 - - Sequential constant propagation:-
@@ -862,7 +862,7 @@ show                                     // Displays the synthes=ized output /ne
 </details>
 
 <details>
-	<summary>Combinational Logic Optimisations:- </summary>
+	<summary>Combinational Logic Optimisations(Lab):- </summary>
 
  ### opt_check:-
 
@@ -906,7 +906,7 @@ show                                     // Displays the synthes=ized output /ne
 </details>
 
 <details>
-	<summary>Sequential Logic Optimisations:-  </summary>
+	<summary>Sequential Logic Optimisations(Lab):-  </summary>
 
 ### dff_const1:- 
 
@@ -940,6 +940,21 @@ show                                     // Displays the synthes=ized output /ne
 #### Synthesized Output:- 
 ![synth op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1b58eae2-f2f3-4d69-bd5a-9da476942e89)
 
+### dff_const3:- 
+
+#### code:- 
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c53e9edb-2fb1-43d9-8eee-b8db63583d1e)
+
+#### Cells:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/21af0961-438d-48bf-8984-633bc3e7985f)
+
+#### Wave output:- 
+- ![wave(The q becomes for 0 clk cycle and remains 1 for all other cycles)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9e54a4a6-fca0-445b-8911-af0343ac5bba)
+- The q becomes for 0 clk cycle and remains 1 for all other cycles
+
+#### Synthesized Output:- 
+- ![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/03aed9af-457e-4e2b-b7da-f824cb27fb33)
+- The flops were not optimised.
 
 </details>
 
