@@ -861,6 +861,52 @@ show                                     // Displays the synthes=ized output /ne
   
 </details>
 
+<details>
+	<summary>Combinational Logic Optimisations </summary>
+
+ ### opt_check:-
+
+ #### Code:- 
+ ![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f78f56c5-7b20-42d1-9a56-42b4a98d37b5)
+
+#### Cells used:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/91a9126a-e164-4451-b215-65ac75490658)
+
+#### opt_clean -purge
+![Used to perform optimisations](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/34c38c9a-6843-43df-8002-2deecf7269ca)
+
+#### Synthesized output
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/a23adfca-8390-4699-9e0d-bd5ae0765836)
+
+
+### opt_check2:-
+
+#### Code:-
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d9d3fa36-ddc8-4dd0-a6ff-526831d85d41) 
+
+#### Cells used:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9c315899-fc47-4d59-9205-443add669eeb)
+
+#### Synthesized output:-
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/9e3810e9-d87d-4c6a-a3d7-855b6003aa9e)
+
+
+### opt_check3:-
+
+#### Code:-
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/03bd81c0-55bd-42e4-a3d4-c0123e227fff)
+ 
+#### Cells used:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/0485c9ce-4cf1-4a86-b764-cef810e505f2)
+
+#### Synthesized output:-
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1863eba3-04d5-4ae5-a12f-11221ed79c98)
+
+
+</details>
+
+
+
 
 </details>
 
