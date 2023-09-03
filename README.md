@@ -1013,8 +1013,8 @@ show                                     // Displays the synthes=ized output /ne
   - Non standard verilog coding.
 
 ### Missing sensitivity list:- 
-Consider the following code:- 
-```
+- Consider the following code:- 
+	```
 	module mux(
 	input i0,input i1,input sel,ouput reg y);
 	always@(sel)
@@ -1025,12 +1025,45 @@ Consider the following code:-
 	       y=i0;
 	end 
 	endmodule
-```
+	```
+- In the above code i1 and i2 are not icluded in the sensi list.
+- This will lead to improper functionality of the design as it will not respond to the changes in i1 and i2
+
+### Blocking and Non-blocking assignments:- 
+- Blocking statements:-
+- - Using "  =  " for assign statements.
+  - Statements are executed in order which they are written.
+
+- Non-Blocking statements:-
+- - Using "  <=  " for assign stetements.
+  - The instructions are executed parallely.
+  - All the RHS part is evaluated first and then assigned to the LHS part.
+
+- Consider the code below:-
+  ```
+  	module code (input clk,input reset,input d,output regq);
+	reg q0;
+	always@(posedge clk,posedge reset)
+	begin
+	if(reset)
+	begin
+	   q0=1'b0;
+	   q=1'b0;
+	end
+	else
+	begin
+                // Case1        //  2nd case:- 
+  		q=qo;           //  q0=d;
+                qo=d;           //  q=q0; 
+	end 
+	endmodule
+  ```
+- Case1:- Since the statements are executed in order q0 value wil be assigned to q but, the value of d will be assigned to q0.So, we get 2 flops.
+- Case2:- The value assigned for q will be updated value of q0.So,we get 1 flop.
+
+##
 
 </details>
-
-
-
 
 </details>
 
