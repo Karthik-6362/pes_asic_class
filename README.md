@@ -1,4 +1,4 @@
-![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e6929349-85cf-44b2-bec6-523a4242347b)# PES_ASIC_CLASS
+# PES_ASIC_CLASS
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#Installation_of_RISC-v_toolchain)
