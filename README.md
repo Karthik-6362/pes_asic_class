@@ -1,4 +1,4 @@
-# PES_ASIC_CLASS
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e6929349-85cf-44b2-bec6-523a4242347b)# PES_ASIC_CLASS
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#Installation_of_RISC-v_toolchain)
@@ -1090,9 +1090,77 @@ show                                     // Displays the synthes=ized output /ne
 ```
 - In this case q0 value is first calculated and then used to calculate Y.
 - Ther will no simulation and synthesis errors.
+
+
 </details>
 
 </details>
+
+<details>
+	<summary> Labs on GLS and Synthesis-Simulation Mismatch:- </summary>
+
+### Ternary_operator_mux:- 
+
+#### Code:-
+ ![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c0126e76-4206-4642-9480-a999d11188a9)
+
+#### Cells:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7c1aadfe-8114-430b-ab00-debe4d6ef863)
+
+#### Wave of RTL:- 
+![wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f8d2a991-fbcc-4d63-aebf-7db8ebde8c80)
+
+#### Wave of GLS:- 
+![Wave for gls(netlist simulation)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/0fb2a85d-a459-4358-9407-16de2db253f2)
+
+#### Netlist:- 
+![Netlist](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/b72fb38f-9386-4873-9ed9-8ac74dd62d93)
+
+#### Synthesized output:- 
+![Synth op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/6e5109e1-d643-4c2e-b591-8c738c989bd8)
+
+
+### Bad_mux:- 
+
+#### Code:- 
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/41d7f92f-047c-4bc4-9bc1-d0a9c053928f)
+
+#### Cells:- 
+![Cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/41506d7c-c91d-444f-9172-35c4636492bf)
+
+#### Wave of RTL:-
+![wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/341b8317-a668-474a-a024-b27c6f43ff3b)
+
+#### Wave of GLS:- 
+![Wave for gls(netlist simulation)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/20f3e445-c0d6-46eb-9053-30595ea33ec5)
+
+#### Netlist:- 
+![netlist](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7d84b456-e127-4306-9261-ad34d9d56aa2)
+
+#### Observations:- 
+- The output is not sensing the changes in the inputs i1 and 12.
+- The simulation and synthesis outputs are different.
+- Missing sensitivity list causes the the mux to not perform properly.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
