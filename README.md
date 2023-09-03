@@ -1154,11 +1154,21 @@ show                                     // Displays the synthes=ized output /ne
 - The present valuie of C is anded with the previous values of A|B.
 - But our expextation is that is takes only present values
 - The Value of X taken in calculation of D is the previous values.
+- The Synthesized output does not contains ant flops it is o21a gate.
 
 #### Wave output of RTL simulation:- 
 ![RTL simulation wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/fa2950dc-c455-4586-a85f-0517339c9207)
 
-#### 
+#### Wave output of the simulation using the netlist:-
+![Wave of netlist](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/f78705b4-141d-4ef7-aafb-86a540963d2d)
+
+#### Netlist:- 
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/3a83125f-72f5-4bba-b9af-51d360a57159)
+
+#### Synthesized output:- 
+![Synthesized output](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/2d36ee5a-67a1-4fb8-a445-767d6835300b)
+
+
 </details>
 
 
