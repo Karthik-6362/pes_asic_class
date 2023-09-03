@@ -988,6 +988,49 @@ show                                     // Displays the synthes=ized output /ne
 
 </details>
 
+# DAY-4
+
+<details>
+	<summary>GLS, blocking vs non-blocking and Synthesis-Simulation mismatch :-</summary>
+
+ ## GLS(Gate Level Simulation):- 
+ - Running the testbench on the netlist generated.
+ - Netlist is logically same to the RTL design.
+ - Same testbench can be used as the design is same.
+
+## Why GLS:- 
+- Verify the logical correctness of the design after stnthesis.
+- Ensure that the timing of the design is met(Can be done only is GLS is run with delay annotations).
+
+## GLS using iverilog
+![Gate level simulation](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/41e29e88-5e7a-427c-b4da-fe579ad6f3dd)
+
+## Synthesis and simulation synthesis:- 
+- Used ti check whether the netlist is true representation of the design.
+- There are 3 reasons for mismatch:-
+- - Missing sensitivity list.
+  - Blocking and Non-blocking assignments.
+  - Non standard verilog coding.
+
+### Missing sensitivity list:- 
+Consider the following code:- 
+```
+	module mux(
+	input i0,input i1,input sel,ouput reg y);
+	always@(sel)
+	begin
+	if(sel)
+	       y=i1;
+	else
+	       y=i0;
+	end 
+	endmodule
+```
+
+</details>
+
+
+
 
 </details>
 
