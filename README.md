@@ -862,7 +862,7 @@ show                                     // Displays the synthes=ized output /ne
 </details>
 
 <details>
-	<summary>Combinational Logic Optimisations </summary>
+	<summary>Combinational Logic Optimisations:- </summary>
 
  ### opt_check:-
 
@@ -905,7 +905,43 @@ show                                     // Displays the synthes=ized output /ne
 
 </details>
 
+<details>
+	<summary>Sequential Logic Optimisations:-  </summary>
 
+### dff_const1:- 
+
+#### Code:- 
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/803eb366-c43c-4312-a8a2-2c4027660f49)
+
+#### Cells:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/5d944b60-e4b7-46cb-94c9-394bfef819d4)
+
+#### Wave Output:-
+- ![wave ( op depends on clk)](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/689515b3-3bf2-4ed9-bd90-08471796f762)
+- The output depends on the clk.
+
+#### Synthesized Output:- 
+- ![Synth op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/fe222ae5-052a-4397-bbae-0e50caddd502)
+- A inverter is used as we have given a high reset but the standard cells have active low reset.
+
+
+### dff_const2:- 
+
+#### Code:- 
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/7cdac6d7-59cd-4c26-9c9a-fe667473012c)
+
+#### Cells:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/14f6ef1b-58e5-4fd7-ba3c-988c3a787352)
+
+#### Wave output:- 
+- Irrespective of the clk and reset the output is 1.
+- ![wave](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/4ae27f6c-7456-431c-a74c-2a53bead1534)
+
+#### Synthesized Output:- 
+![synth op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/1b58eae2-f2f3-4d69-bd5a-9da476942e89)
+
+
+</details>
 
 
 </details>
