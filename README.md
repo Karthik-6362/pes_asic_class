@@ -961,6 +961,8 @@ show                                     // Displays the synthes=ized output /ne
 <details>
 	<summary>Sequential optimzations for unused outputs:-  </summary>
 
+### Counter_opt:- 
+- The values count[1] and count[2] are not used in the primary outputs so they are not synthesized.
 #### Code:- 
 ![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/676b0138-2fed-4caf-b431-8cc264051a87)
 
@@ -971,6 +973,18 @@ show                                     // Displays the synthes=ized output /ne
 - ![Synth op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/008a2c47-fc6e-4057-9531-bb328977beba)
 - The output is optimised to a toggling like structure on every clk cycle.
 
+### Counter_opt2:- 
+- We need all the bits count because we are using all of them .
+- In the previous case the unused outputs were ptimised including their flipflops
+
+#### Code:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/14f2371e-6096-456e-a1b2-140741ae8d41)
+
+#### Cells:- 
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d6b2d9c2-0820-4c37-be94-7b1fee4b9d0b)
+
+#### Synthesized output:-
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/d3747a19-27cd-448e-aa91-d6f799e2f0d1)
 
 </details>
 
