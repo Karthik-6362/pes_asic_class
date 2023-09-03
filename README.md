@@ -8,6 +8,8 @@
 - - [Softwares installation](#Softwares_installation)
 - - [DAY-1:- Introduction to Verilog RTL design and synthesis](#DAY-1)
   - [DAY-2:- Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#DAY-2)
+  - [DAY-3:- Combinational and sequential optmizations](#DAY-3)
+  - [DAY-4:- GLS, blocking vs non-blocking and Synthesis-Simulation mismatch](#DAY-4)
 
 
 
