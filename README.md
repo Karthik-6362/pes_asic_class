@@ -1061,8 +1061,35 @@ show                                     // Displays the synthes=ized output /ne
 - Case1:- Since the statements are executed in order q0 value wil be assigned to q but, the value of d will be assigned to q0.So, we get 2 flops.
 - Case2:- The value assigned for q will be updated value of q0.So,we get 1 flop.
 
-##
-
+## Caveats With Blocking Statements:- 
+- Conisder the following code:-
+```
+	module mux(
+	input i0,input i1,input sel,ouput reg y);
+	always@(*)
+	begin
+	       y=q0 & c;
+	       q0=a|b;
+	end 
+	endmodule
+```
+- The value of Y is calculated first so thw q0 utilised is the previous one.
+- So, a flop exists to delay the o/p by one cycle.
+- There is a mismatch b/w the simulation and the synthesis.
+- The synthesized o/p will be a and gate followed by an or gate
+- Conisder the following code:-
+```
+	module mux(
+	input i0,input i1,input sel,ouput reg y);
+	always@(*)
+	begin
+	       q0=a|b;
+               y=q0 & c;
+	end 
+	endmodule
+```
+- In this case q0 value is first calculated and then used to calculate Y.
+- Ther will no simulation and synthesis errors.
 </details>
 
 </details>
