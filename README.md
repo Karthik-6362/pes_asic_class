@@ -1,4 +1,4 @@
-# PES_ASIC_CLASS
+![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/c751c35a-038d-4bf7-b466-2a8023542886)# PES_ASIC_CLASS
 
 # Quick Links:-
 - [Installation of RV64 toolcahin](#Installation_of_RISC-v_toolchain)
@@ -955,6 +955,22 @@ show                                     // Displays the synthes=ized output /ne
 #### Synthesized Output:- 
 - ![image](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/03aed9af-457e-4e2b-b7da-f824cb27fb33)
 - The flops were not optimised.
+
+</details>
+
+<details>
+	<summary>Sequential optimzations for unused outputs:-  </summary>
+
+#### Code:- 
+![code](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/676b0138-2fed-4caf-b431-8cc264051a87)
+
+#### Cells:- 
+![cells](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/e7e21c71-4642-4135-9ead-54f59335cbbc)
+
+#### Synthesized output:-
+- ![Synth op](https://github.com/Karthik-6362/pes_asic_class/assets/137412032/008a2c47-fc6e-4057-9531-bb328977beba)
+- The output is optimised to a toggling like structure on every clk cycle.
+
 
 </details>
 
