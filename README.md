@@ -1145,7 +1145,11 @@ show                                     // Displays the synthes=ized output /ne
 </details>
 
 
+<details>
+	<summary> Labs on synth-sim mismatch for blocking statement:- </summary>
 
+ 
+</details>
 
 
 
